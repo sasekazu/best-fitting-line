@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Best fitting line</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/numeric-1.2.6.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="page">
+		<div>
+			<p>
+			最尤推定による直線の当てはめ．出力誤差モデルと入力誤差モデルの比較．<br />
+			下の枠内で<b>クリックでデータ点追加</b>．<b>右ボタンドラッグでデータ点を移動</b>．<br />
+			</p>
+		</div>
+		<div>
+			<input type="button" value="Reset" id="reset" style="margin: 10px;">
+			赤: 出力誤差モデル，緑：入力誤差モデル
+		</div>
+		<div>
+			<canvas id="myCanvas" width="1000" height="600" style="border: solid 1px;" oncontextmenu="return false"></canvas>
+		</div>
+		<div>
+			<h3>ソースコード</h3>
+			<ul>
+				<li><a href="https://github.com/sasekazu/least-square-line">GitHub</a></li>
+				<li><a href="https://gist.github.com/sasekazu/dce32323ad04a0f60c9c">Gist</a> 最小二乗法による直線の当てはめ部抜粋</li>
+				<li><a href="https://gist.github.com/sasekazu/4e73c6baa7e568f47a1b">Gist</a> 最小二乗法によるn次多項式の当てはめ部抜粋</li>
+			</ul>
+			<h4>参考資料</h4>
+			<ul>
+				<li>金谷，これなら分かる最適化数学，共立出版，2005.</li>
+			</ul>
+		</div>
+	</div>
+	<footer style="text-align: center;">
+		<a href="http://www.sasekazu.info">sasekazu.info</a>
+	</footer>
+</body>
+</html>

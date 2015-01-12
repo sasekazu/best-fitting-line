@@ -24,6 +24,9 @@ function leastSquare(points) {
 	return numeric.solve(A, b);
 }
 
+// 入力誤差モデルを用いた最尤推定による直線当てはめ
+// 入力 データ点 points = [[x0,y0],[x1,y1],...,[xn-1,yn-1]]
+// y = ax + b の a, b を格納した配列 [a,b] を返す
 function lineFittingInputErrorModel(points) {
 
 	// 点の数
